@@ -1,0 +1,38 @@
+// spring section starts
+
+.spring {
+    margin: 151px 0;
+    
+    ul { 
+        @include flex(row,space-between,null,flex-end);
+        position: relative;
+    }
+
+    .dark-background {
+        padding: 35px 2.6% 40px;
+        left: 8%;
+        bottom: 49px;
+        background-color: #000000;
+        color: #ffffff;
+
+        h2 { padding-left: 1%;}
+    }
+
+    .transparent-background {
+        width: 26%;
+        top: 60px;
+        right: 24.8%;
+        text-align: left;
+
+        h2::before { left: 0; }
+
+        a {
+            width: 61%;
+            color: #69625f;
+
+            &::after { margin: 0;}
+        }
+    }
+}
+
+// spring section ends
