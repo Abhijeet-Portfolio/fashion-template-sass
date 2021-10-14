@@ -1,0 +1,50 @@
+// stylish section starts
+
+.stylish {
+    background-color: $primary-background-color;
+
+    .wrapper { 
+        @include flex(row,space-between,null,center);
+
+        div {
+            @include boxsizing;
+            width: 43.75%;
+            padding: 84px 2.7% 94px;
+            border: 3px solid #000000;
+        }    
+    }
+
+    h2 {
+        width: 97%;
+        padding-bottom: 28px;
+        border-bottom: 2px solid #000000;
+        font-size: 64px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: $primary-font-family;
+        line-height: 0.96;
+    }
+
+    h3 {
+        width: 31%;
+        padding: 44px 0 0px;        
+        color: #81899e;
+        font-size: 15px;
+        text-transform: uppercase;
+        
+    }
+
+    a { 
+        width: 100%;
+        color: inherit;
+        border-bottom: 1px solid #484848;
+
+        &::after { 
+            @include icon('\f101',24px);
+            position: relative;
+            bottom: 5px;
+        }
+    }
+}
+
+// stylish section ends

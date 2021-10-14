@@ -1,0 +1,21 @@
+/*=================================
+  Header styling starts here
+=================================*/
+
+header {
+    padding: 40px 0 42px;
+
+    .wrapper { @include flex(row,space-between,null,end);}
+
+    span {
+        color: #989898;
+        text-indent: -9999px;
+        cursor: pointer;
+
+        &::after { @include icon('\f0c9',28px);}
+    }
+}
+
+/*=================================
+  Header styling ends here
+=================================*/
