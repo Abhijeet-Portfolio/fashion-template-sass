@@ -246,3 +246,46 @@ header {
       color: #6c747b; }
   .scarf li:last-child {
     margin-left: 3.4%; }
+
+.winter {
+  margin: 148px 0; }
+  .winter ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    position: relative; }
+  .winter .transparent-background {
+    padding: 0 1.75%;
+    top: 95px;
+    left: 0;
+    text-align: left; }
+    .winter .transparent-background h2::before {
+      width: 71.5%;
+      left: 0; }
+    .winter .transparent-background a {
+      width: 32%;
+      color: #848484; }
+  .winter li:last-child {
+    margin-left: 3.5%;
+    position: relative; }
+  .winter .white-background {
+    width: 75%;
+    padding: 31px 18% 36px 2.2%;
+    bottom: 52px;
+    background-color: #ffffff;
+    text-align: left; }
+    .winter .white-background h2 {
+      padding-right: 11%; }
+      .winter .white-background h2::before {
+        width: 100%;
+        left: 0; }
+    .winter .white-background a {
+      width: 46%;
+      color: #848484; }

@@ -1,0 +1,56 @@
+// winter section starts
+
+.winter {
+    margin: 148px 0;
+
+    ul { 
+        @include flex(row,end);
+        position: relative;
+    } 
+
+    .transparent-background {
+        padding: 0 1.75%;
+        top: 95px;
+        left: 0;
+        text-align: left;
+
+        h2::before {
+            width: 71.5%;
+            left: 0;
+        }
+
+        a {
+            width: 32%;
+            color: #848484;
+        }
+    }
+
+    li:last-child {
+        margin-left: 3.5%;
+        position: relative;
+    }
+
+    .white-background {
+        width: 75%;
+        padding: 31px 18% 36px 2.2%;
+        bottom: 52px;
+        background-color: #ffffff;
+        text-align: left;
+
+        h2 {
+            padding-right: 11%;
+
+            &::before {
+                width: 100%;
+                left: 0;
+            }
+        }
+
+        a {
+            width: 46%;
+            color: #848484;
+        }
+    }
+}
+
+// winter section ends
