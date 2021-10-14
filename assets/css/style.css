@@ -99,6 +99,41 @@ li {
   width: 83.5%;
   margin: 0 auto; }
 
+.rectangle {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 36.8%;
+  padding: 20px 0;
+  position: absolute;
+  text-align: right; }
+  .rectangle h2 {
+    padding-bottom: 29px;
+    position: relative;
+    font-family: "Times New Roman", serif;
+    font-size: 35px;
+    text-transform: uppercase; }
+    .rectangle h2::before {
+      content: ' ';
+      width: 90.8%;
+      padding: 1px 0;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #7f7f7f; }
+  .rectangle a {
+    width: 50%;
+    margin-top: 38px;
+    color: #cfc9c9;
+    font-size: 16px;
+    text-transform: uppercase; }
+    .rectangle a::after {
+      content: ">";
+      float: right;
+      font-family: 'fontAwesome';
+      font-size: 15px;
+      text-indent: 0;
+      margin-left: 5%; }
+
 /*=================================
   Header styling starts here
 =================================*/
@@ -181,3 +216,33 @@ header {
       text-indent: 0;
       position: relative;
       bottom: 5px; }
+
+.scarf {
+  margin: 74px 0; }
+  .scarf ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    position: relative; }
+  .scarf .dark-background {
+    padding: 42px 2.6% 48px;
+    left: 8%;
+    bottom: 34px;
+    background-color: #000000;
+    color: #ffffff; }
+  .scarf .transparent-background {
+    width: 30%;
+    padding: 0 2%;
+    top: 114px;
+    right: 0; }
+    .scarf .transparent-background h2::before {
+      width: 91%; }
+    .scarf .transparent-background a {
+      width: 70%;
+      color: #6c747b; }
+  .scarf li:last-child {
+    margin-left: 3.4%; }

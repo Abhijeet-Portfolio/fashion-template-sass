@@ -32,3 +32,45 @@
     width: 83.5%; 
     margin: 0 auto;
   }
+
+  // rectangle
+
+  .rectangle {
+    @include boxsizing;
+    width: 36.8%;
+    padding: 20px 0;
+    position: absolute;
+    text-align: right;
+
+    h2 {
+        padding-bottom: 29px;
+        position: relative;
+        font-family: $primary-font-family;
+        font-size: 35px;
+        text-transform: uppercase;
+
+        &::before {
+            content: ' ';
+            width: 90.8%;
+            padding: 1px 0;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-color: #7f7f7f;
+        }
+    }
+
+    a {
+        width: 50%;
+        margin-top: 38px;
+        color: #cfc9c9;
+        font-size: 16px;
+        text-transform: uppercase;
+
+        &::after {                
+            @include icon('>',15px);
+            margin-left: 5%;
+                   
+        }
+    }
+}
