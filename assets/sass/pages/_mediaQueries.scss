@@ -1,0 +1,154 @@
+// media queries for hover
+
+@media only screen and (min-width: 1024px) {
+
+    header span:hover,
+    .stylish a:hover{ color: #000000;}
+
+    .rectangle a:hover,
+    .arrivals a:hover { text-decoration: underline;}
+
+    footer .links a:hover { color: #ffffff;}
+    .socialMedia a:hover { color: #aaaaaa;}
+    footer p a:hover { text-decoration: none;}
+}
+
+// media queries for max-width 995px
+
+@media only screen and (max-width: 995px) {
+
+    .rectangle { width: 50%;}
+    .stylish .wrapper { 
+        @include flex(column);
+        
+        div { 
+            width: 80%;
+            margin: 10px auto;
+        }
+    }
+
+    .scarf ul {
+        @include flex(column);
+
+        li:first-child { 
+            width: 60%;
+            margin: 10px auto;
+        }
+
+        li:last-child {
+            width: 60%;
+            margin: 10px auto;
+        }
+
+        
+    }
+
+    .winter ul {
+        @include flex(column);
+
+        li {
+            width: 60%;
+            margin: 10px auto;
+        }
+
+        li:last-child { margin: 10px auto;}
+    }
+
+    .spring ul {
+        @include flex(column);
+
+        li {
+            width: 60%;
+            margin: 10px auto;
+        }
+
+        .transparent-background { width: 50%;}
+    }
+
+    .dress ul {
+        @include flex(column);
+
+        li {
+            width: 60%;
+            margin: 10px auto;
+        }
+
+        li:last-child { 
+            margin: 10px auto;
+
+            .rectangle { width: 50%;}
+        }
+    }
+
+    .arrivals .wrapper {
+        @include flex(column);
+        
+        div { 
+            width: 60%;
+            margin: 10px auto;
+        }
+    }
+
+    footer .links {
+        @include flex(column);
+        text-align: center;
+
+        li { margin: 20px auto;}
+    }
+
+    footer .socialMedia li { width: 3%;}
+}
+
+// media queries for max-width 425px
+
+@media only screen and (max-width: 425px) {
+
+    .stylish .wrapper {
+        div { width: 90%;}
+        h2 { font-size: 40px;}
+        h3 { width: 46%;}
+    }
+
+    .rectangle {
+        width: 70%;
+
+        h2 { font-size: 20px;}
+
+        a { 
+            width: 70%;
+            font-size: 14px;
+        }
+    }
+
+    .scarf ul {
+        li:first-child { width: 100%;}
+        .transparent-background { width: auto;}
+        li:last-child { width: 100%;}
+    }
+
+    .winter ul li { width: 100%;}
+
+    .spring ul {
+        li { width: 100%;}
+
+        .transparent-background { 
+            width: 70%;
+
+            a { width: 66%;}
+        }
+    }
+
+    .dress ul {
+        li { width: 100%;}
+
+        li:first-child .rectangle { width: 60%;}
+    }
+
+    .arrivals .wrapper {
+        div { width: 90%;}
+        h2 { font-size: 52px;}
+        h3 { width: 40%;}
+    }
+
+    footer .socialMedia li { width: 5%;}
+}

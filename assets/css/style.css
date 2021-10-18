@@ -291,7 +291,7 @@ header {
       color: #848484; }
 
 .spring {
-  margin: 151px 0; }
+  margin: 151px 0 148px; }
   .spring ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -327,3 +327,328 @@ header {
       color: #69625f; }
       .spring .transparent-background a::after {
         margin: 0; }
+
+.dress {
+  margin: 70px 0; }
+  .dress ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    position: relative; }
+  .dress li:first-child .rectangle {
+    width: 32%;
+    top: 75px;
+    left: 1.8%;
+    text-align: left; }
+    .dress li:first-child .rectangle h2::before {
+      width: 74.5%;
+      left: 0; }
+    .dress li:first-child .rectangle a {
+      width: 33%;
+      color: #69625f; }
+      .dress li:first-child .rectangle a::after {
+        margin: 0; }
+  .dress li:last-child {
+    margin-left: 3.5%; }
+    .dress li:last-child .rectangle {
+      width: 32%;
+      padding: 23px 2% 44px 2.2%;
+      bottom: 105px;
+      background-color: #ffffff;
+      text-align: left; }
+      .dress li:last-child .rectangle h2 {
+        padding-right: 11%; }
+        .dress li:last-child .rectangle h2::before {
+          width: 85%;
+          left: 0; }
+      .dress li:last-child .rectangle a {
+        width: 46%;
+        color: #848484; }
+
+.arrivals {
+  background-color: #ececec; }
+  .arrivals .wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .arrivals .wrapper div {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 37.5%;
+      margin: 0 auto;
+      padding: 138px 3.5% 145px;
+      border: 5px solid #000000; }
+  .arrivals h2 {
+    width: 97%;
+    padding-bottom: 22px;
+    border-bottom: 2px solid #000000;
+    font-size: 64px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Times New Roman", serif;
+    line-height: 0.96; }
+  .arrivals h3 {
+    width: 33%;
+    padding: 22px 0 0px;
+    color: #81899e;
+    font-size: 15px;
+    text-transform: uppercase; }
+  .arrivals a {
+    width: 100%;
+    color: inherit; }
+    .arrivals a::after {
+      content: ">";
+      float: right;
+      font-family: 'fontAwesome';
+      font-size: 15px;
+      text-indent: 0; }
+
+/*=================================
+  Header styling starts here
+=================================*/
+footer {
+  background-color: #332929;
+  padding: 97px 0 0; }
+  footer .wrapper {
+    width: 100%; }
+  footer .links {
+    width: 83.5%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row; }
+    footer .links li {
+      width: 35%; }
+  footer h2 {
+    margin-bottom: 24px;
+    color: #e4e7e1;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: "Times New Roman", serif; }
+  footer .link li {
+    width: auto;
+    margin: 12px 0;
+    display: block; }
+    footer .link li a {
+      color: #b5b1a1;
+      font-size: 14px;
+      text-transform: capitalize;
+      font-style: italic; }
+  footer .socialMedia {
+    width: 100%;
+    margin: 80px 0 75px;
+    text-align: center; }
+    footer .socialMedia li {
+      width: 1.5%;
+      text-align: center; }
+      footer .socialMedia li a {
+        color: #ffffff;
+        text-indent: -9999px; }
+      footer .socialMedia li:first-child a::before {
+        content: "";
+        float: right;
+        font-family: 'fontAwesome';
+        font-size: 15px;
+        text-indent: 0; }
+      footer .socialMedia li:nth-child(2) a::before {
+        content: "";
+        float: right;
+        font-family: 'fontAwesome';
+        font-size: 15px;
+        text-indent: 0; }
+      footer .socialMedia li:nth-child(3) a::before {
+        content: "";
+        float: right;
+        font-family: 'fontAwesome';
+        font-size: 15px;
+        text-indent: 0; }
+      footer .socialMedia li:nth-child(4) a::before {
+        content: "";
+        float: right;
+        font-family: 'fontAwesome';
+        font-size: 15px;
+        text-indent: 0; }
+  footer p {
+    padding: 41px 0 38px;
+    background-color: #333333;
+    color: #a7a7a7;
+    font-size: 14px;
+    text-align: center; }
+    footer p a {
+      color: inherit;
+      text-transform: capitalize;
+      text-decoration: underline; }
+
+/*=================================
+  Footer styling ends here
+=================================*/
+@media only screen and (min-width: 1024px) {
+  header span:hover,
+  .stylish a:hover {
+    color: #000000; }
+  .rectangle a:hover,
+  .arrivals a:hover {
+    text-decoration: underline; }
+  footer .links a:hover {
+    color: #ffffff; }
+  .socialMedia a:hover {
+    color: #aaaaaa; }
+  footer p a:hover {
+    text-decoration: none; } }
+
+@media only screen and (max-width: 995px) {
+  .rectangle {
+    width: 50%; }
+  .stylish .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column; }
+    .stylish .wrapper div {
+      width: 80%;
+      margin: 10px auto; }
+  .scarf ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column; }
+    .scarf ul li:first-child {
+      width: 60%;
+      margin: 10px auto; }
+    .scarf ul li:last-child {
+      width: 60%;
+      margin: 10px auto; }
+  .winter ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column; }
+    .winter ul li {
+      width: 60%;
+      margin: 10px auto; }
+    .winter ul li:last-child {
+      margin: 10px auto; }
+  .spring ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column; }
+    .spring ul li {
+      width: 60%;
+      margin: 10px auto; }
+    .spring ul .transparent-background {
+      width: 50%; }
+  .dress ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column; }
+    .dress ul li {
+      width: 60%;
+      margin: 10px auto; }
+    .dress ul li:last-child {
+      margin: 10px auto; }
+      .dress ul li:last-child .rectangle {
+        width: 50%; }
+  .arrivals .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column; }
+    .arrivals .wrapper div {
+      width: 60%;
+      margin: 10px auto; }
+  footer .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    text-align: center; }
+    footer .links li {
+      margin: 20px auto; }
+  footer .socialMedia li {
+    width: 3%; } }
+
+@media only screen and (max-width: 425px) {
+  .stylish .wrapper div {
+    width: 90%; }
+  .stylish .wrapper h2 {
+    font-size: 40px; }
+  .stylish .wrapper h3 {
+    width: 46%; }
+  .rectangle {
+    width: 70%; }
+    .rectangle h2 {
+      font-size: 20px; }
+    .rectangle a {
+      width: 70%;
+      font-size: 14px; }
+  .scarf ul li:first-child {
+    width: 100%; }
+  .scarf ul .transparent-background {
+    width: auto; }
+  .scarf ul li:last-child {
+    width: 100%; }
+  .winter ul li {
+    width: 100%; }
+  .spring ul li {
+    width: 100%; }
+  .spring ul .transparent-background {
+    width: 70%; }
+    .spring ul .transparent-background a {
+      width: 66%; }
+  .dress ul li {
+    width: 100%; }
+  .dress ul li:first-child .rectangle {
+    width: 60%; }
+  .arrivals .wrapper div {
+    width: 90%; }
+  .arrivals .wrapper h2 {
+    font-size: 52px; }
+  .arrivals .wrapper h3 {
+    width: 40%; }
+  footer .socialMedia li {
+    width: 5%; } }

@@ -1,0 +1,46 @@
+// arrivals section starts
+
+.arrivals {
+    background-color: $primary-background-color;
+
+    .wrapper { 
+        width: 100%;
+        @include flex(row,space-between,null,center);
+
+        div {
+            @include boxsizing;
+            width: 37.5%;
+            margin: 0 auto;
+            padding: 138px 3.5% 145px;
+            border: 5px solid #000000;
+        }    
+    }
+
+    h2 {
+        width: 97%;
+        padding-bottom: 22px;
+        border-bottom: 2px solid #000000;
+        font-size: 64px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: $primary-font-family;
+        line-height: 0.96;
+    }
+
+    h3 {
+        width: 33%;
+        padding: 22px 0 0px;        
+        color: #81899e;
+        font-size: 15px;
+        text-transform: uppercase;        
+    }
+
+    a { 
+        width: 100%;
+        color: inherit;
+
+        &::after { @include icon('>',15px);}
+    }
+}
+
+// arrivals sevtion ends

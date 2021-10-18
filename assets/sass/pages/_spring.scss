@@ -1,7 +1,7 @@
 // spring section starts
 
 .spring {
-    margin: 151px 0;
+    margin: 151px 0 148px;
     
     ul { 
         @include flex(row,space-between,null,flex-end);

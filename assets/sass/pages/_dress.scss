@@ -1,0 +1,57 @@
+// dress section starts
+
+.dress {
+    margin: 70px 0;
+    
+    ul { 
+        @include flex(row,end);
+        position: relative;
+    } 
+
+    li:first-child .rectangle {
+        width: 32%;
+        top: 75px;
+        left: 1.8%;
+        text-align: left;
+
+        h2::before { 
+            width: 74.5%;
+            left: 0;
+        }
+
+        a {
+            width: 33%;
+            color: #69625f;
+
+            &::after { margin: 0;}
+        }
+    }
+
+    li:last-child { 
+        margin-left: 3.5%;
+
+        .rectangle {
+            width: 32%;
+            padding: 23px 2% 44px 2.2%;
+            bottom: 105px;
+            background-color: #ffffff;
+            text-align: left;
+
+            h2 {
+                padding-right: 11%;
+
+                &::before {
+                    width: 85%;
+                    left: 0;
+                }
+            }
+
+            a {
+                width: 46%;
+                color: #848484;
+            }
+        }
+    }
+}
+
+// dress section ends

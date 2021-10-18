@@ -1,0 +1,78 @@
+/*=================================
+  Header styling starts here
+=================================*/
+
+footer {
+    background-color: #332929;
+    padding: 97px 0 0;
+
+    .wrapper { width: 100%; }
+
+    .links {
+        width: 83.5%;
+        margin: 0 auto;
+        @include flex(row);
+
+        li { width: 35%;}
+    }
+
+    h2 {
+        margin-bottom: 24px;
+        color: #e4e7e1;
+        font-size: 20px;
+        text-transform: capitalize;
+        font-family: $primary-font-family;
+    }
+
+    .link li {
+        width: auto;
+        margin: 12px 0;
+        display: block;
+
+        a {
+            color: #b5b1a1;
+            font-size: 14px;
+            text-transform: capitalize;
+            font-style: italic;
+        }
+    }
+
+    .socialMedia {
+        width: 100%;        
+        margin: 80px 0 75px;
+        text-align: center;
+
+        li { 
+            width: 1.5%;
+            text-align: center;
+
+            a { 
+                color: #ffffff;
+                text-indent: -9999px;
+            }
+        
+            &:first-child a::before { @include icon('\f09a',15px);}
+            &:nth-child(2) a::before { @include icon('\f099',15px);}
+            &:nth-child(3) a::before { @include icon('\f16d',15px);}
+            &:nth-child(4) a::before { @include icon('\f0e1',15px);}
+        }
+    }
+
+    p {
+        padding: 41px 0 38px;
+        background-color: #333333;
+        color: #a7a7a7;
+        font-size: 14px;
+        text-align: center;
+
+        a {
+            color: inherit;
+            text-transform: capitalize;
+            text-decoration: underline;
+        }
+    }
+}
+
+/*=================================
+  Footer styling ends here
+=================================*/
